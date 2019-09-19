@@ -5,8 +5,8 @@ package CircleRadius;
 //Create a circle object in main and call the method on it
 
 public class RadiusCircle {
-    public double PI;
-    public double Radius;
+    private double PI;
+    private double Radius;
 
 
 
@@ -21,6 +21,22 @@ public class RadiusCircle {
         System.out.println(PI * Radius * Radius);
 
 
+    }
+
+    public double getPI() {
+        return PI;
+    }
+
+    public double getRadius() {
+        return Radius;
+    }
+
+    public void setRadius(double radius) {
+        Radius = radius;
+    }
+
+    public void setPI(double PI) {
+        this.PI = PI;
     }
 
     @Override

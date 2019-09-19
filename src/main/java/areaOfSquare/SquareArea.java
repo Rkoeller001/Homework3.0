@@ -5,8 +5,8 @@ package areaOfSquare;
 //Create a square object in main and call the method on it
 
 public class SquareArea {
-    public double length;
-    public double width;
+    private double length;
+    private double width;
 
     public  SquareArea(double length, double width){
         this.length = length;
@@ -14,6 +14,23 @@ public class SquareArea {
     }
     public void CalculateArea() {
         System.out.println(length * width);
+    }
+
+
+    public double getLength() {
+        return length;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
     }
 
     @Override

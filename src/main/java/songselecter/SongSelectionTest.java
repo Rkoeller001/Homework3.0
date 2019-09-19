@@ -5,7 +5,8 @@ public class SongSelectionTest {
     SongSelection song1 = new SongSelection("No Guidence","Chris Brown");
         System.out.println(song1);
         System.out.println("Now Playing");
-        song1.setTitle();
+        song1.setArtist("Kahlid");
+        song1.setTitle("Talk");
         System.out.println("BY");
         song1.play();
         System.out.println("Favorite Track");

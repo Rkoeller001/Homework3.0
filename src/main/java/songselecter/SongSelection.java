@@ -8,8 +8,8 @@ package songselecter;
 //- the favoriteTrack Methods takes in an array of song  titles and returns the second to the last track in the array.
 
 public class SongSelection {
-    public String title;
-    public String artist;
+    private String title;
+    private String artist;
 
     public SongSelection(String title, String artist){
         this.title = title;
@@ -21,10 +21,25 @@ public class SongSelection {
     public void play(){
         System.out.println(artist);
     }
-    public void favoriteTrack(){
-        String[] TrackTitles = {"Talk-Kahlid","I Don't Care - Justin Bieber","Old Town Road - Lil Nas X","Bad Guy - Billie Eilish"};
+    public void favoriteTrack(){ String[] TrackTitles = {"Talk-Kahlid","I Don't Care - Justin Bieber","Old Town Road - Lil Nas X","Bad Guy - Billie Eilish"};
         System.out.println(TrackTitles[2]);
 
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
+    public void setArtist(String artist) {
+        this.artist = artist;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     @Override
